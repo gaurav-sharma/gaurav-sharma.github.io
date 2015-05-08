@@ -1,15 +1,19 @@
 <!doctype html>
 <html ng-app>
-  <head>
+  <head ng-init="yourName='Title Value'">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <title ng-bind="yourName">Static title text</title>
+    <title ng-bind="yourName">Static</title>
   </head>
   <body>
     <div>
       <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here" value="Title from Angular Model">
+      <input type="text" ng-model="yourName" placeholder="Enter a name here" ng-value="Title from Angular Model">
       <hr>
       <h1>Hello {{yourName}}!</h1>
     </div>
+
+    <script type="text/javascript">
+
+    </script>
   </body>
 </html>
